@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ulang Tahun Abar ❤️‍🔥</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Poppins,Arial,sans-serif;
+  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+  text-align:center;
+}
+section{display:none;padding:30px;min-height:100vh}
+.active{display:block}
+h1,h2,p{color:#ff4d6d}
+.click{font-weight:bold;cursor:pointer;margin-top:20px}
+
+/* CAKE */
+.cake{font-size:80px;animation:float 2s infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+/* BALON */
+.balloons{position:relative;height:300px}
+.balloon{
+  width:50px;height:70px;border-radius:50%;
+  position:absolute;cursor:pointer;
+}
+.balloon::after{
+  content:'';position:absolute;bottom:-15px;left:50%;
+  width:2px;height:15px;background:#333
+}
+
+/* SLIDE */
+.slide{display:none;font-size:18px;margin-top:40px;cursor:pointer}
+
+/* PIN */
+#pinDisplay{font-size:28px;margin-bottom:15px}
+#pinButtons button{
+  width:60px;height:60px;margin:5px;
+  border:none;border-radius:10px;
+  background:#ff4d6d;color:white;
+  font-size:20px;cursor:pointer
+}
+
+/* AMPOLOP */
+#envelope{
+  width:250px;height:150px;
+  background:#ffdde1;
+  margin:30px auto;
+  cursor:pointer;
+  border-radius:10px;
+}
+#letter{
+  display:none;
+  background:white;
+  padding:15px;
+  color:#333;
+  max-height:350px;
+  overflow-y:auto;
+  border-radius:10px;
+  text-align:left;
+}
+#letter p{color:#333;line-height:1.6}
+</style>
+</head>
+
+<body>
+
+<!-- OPENING -->
+<section id="open" class="active">
+<h1>Happy Birthday pacar aku yang ganteng ❤️‍🔥🎂</h1>
+<div class="cake">🎂</div>
+<p class="click" onclick="go('balloon')">Mulai →</p>
+</section>
+
+<!-- BALON -->
+<section id="balloon">
+<h1>Pecahin balonnya dulu yaa 😘</h1>
+<div class="balloons" id="balloons"></div>
+<p id="balloonText"></p>
+</section>
+
+<!-- SLIDE -->
+<section id="slides">
+<div class="slide">cieeee sekarang 20 tahunn 😆</div>
+<div class="slide">harus makin sayang aku yaa 😤</div>
+<div class="slide">kurangin rokok 😤😤</div>
+<div class="slide">klik lagi buat lanjut 💖</div>
+</section>
+
+<!-- QUESTION -->
+<section id="question">
+<h2>Kamu sayang aku nggak? 😘</h2>
+<p class="click" onclick="goPin()">Sayang dong</p>
+<p class="click" onclick="alert('Harus sayang 😤')">Tida</p>
+</section>
+
+<!-- PIN -->
+<section id="pin">
+<h2>Masukkan PIN tanggal spesial 💕</h2>
+<div id="pinDisplay"></div>
+<div id="pinButtons"></div>
+</section>
+
+<!-- AMPOLOP -->
+<section id="envelopeSec">
+<h2>Buka amplopnya 💌</h2>
+<div id="envelope"></div>
+
+<div id="letter">
+<p><b>SELAMAT ULANG TAHUN ABAR ❤️❤️‍🔥🥳</b></p>
+
+<p>aloooo kesayangannya acaaa 🙌🏻, cieee hari iniii diaa udah kepala duaa nich umurnyaa cudahh 20 tahunn hihi 😘 abarr akuu cudahh 20 tahun gengs cudah cemakin tuaaa hihi ❤️🥳</p>
+
+<p>abar sayang, aca mau bilang selamat hari lahir dan selamat bertumbuh jauh lebih baik dari sebelumnya sayanganku cintanya aca 🥳❤️❤️, semoga kamu di beri umur yang panjang, aku berharap untuk kamu kesayangan aca di hari ulang tahun kmu ini, apa pun yang kamu minta semoga kamu terima, apa pun yang kamu cari dapat kamu temukan, dan apa pun yang kamu inginkan semoga itu terpenuhi secepatnya ya ayy, dan pastinya semoga kmu sehat terus untuk kedepannya, di lindungin dimana pun kamu berada sampai tujuan dengan selamat dan selalu di kelilingin dengan orang orang baik pastinya teruss sholattnya jangan pernah di tinggal ya abar sayang terussss kurangin <b>ROKOKNYA</b> 😤 ini yang penting ay.</p>
+
+<p>jangan lupa makan tetap jagaa kesehatan yaa ayy terus jangan kebanyakan minum kopi dan no no no minum alkohol 😤 no no no juga balap ya sayang aca takuttt abar kenapa kenapa ya sayang itu terlalu bahaya aca sangat khawatir 🥺 jadi tidak boleh ya sayangku. terus beli lah ay atau bawalah mantel sayang jangan hujan hujanan nanti kamu demam loh sayang, jaketnya di pakai terus biar ga masuk angin.</p>
+
+<p>aca akan selalu menemani perjalanan panjang kmu ini dan aca akan selalu support kmu apapun itu ay hal yg positif jadi kmu jangan pernah beranggapan sekarang kmu sendirian tidak punya siapa siapa ya sayang karena sekarang ada aku ay ada akuu untuk selama lamanya. tolong ajak aca terus di setiap proses abar ya sayang jangan cari yg lebih sempurna dari aca ya abar, kita sama smaa bertahan ya abar kita sama sama sempurnakannya bareng barenga ya abar ❤️❤️❤️‍🔥</p>
+
+<p>makasih ya sayang makasih udh bertahan buat aca selama 6 bulan ayy, makasih udah mengajarkan aca apa itu cinta apa itu kasih sayang apa itu kesabaran. makasih yaa abarr udah hadir di hidup aca, aku sangat bersyukur sayang dan terimakasih atas rasa nyaman dan rasa aman yang kamu berikan kepada aku ❤️</p>
+
+<p>aca berharap bahkan jika suatu saat segalanya tidak berjalan sesuai keinginanmu kamu ayy nantinya kmu tidak boleh berhenti mencoba, kamu tidak boleh menyerah pada diri kamu sendiri okeyy ayy 😉 aca bangga banget sama kmu ayy, kamu manusia hebat dan kuat. ingat ya ayy kamu layak dicintai dan dirayakan dalam hal apapun 🤍</p>
+
+<p>sekalii lagiiii selamat ulang tahun kesayangan akuuuuu cintanya aku semestanya akuuuuuuu ❤️😘🥳❤️‍🔥</p>
+</div>
+
+<p class="click" onclick="go('final')">Lanjut →</p>
+</section>
+
+<!-- FINAL -->
+<section id="final">
+<h1>SELAMAT ULANG TAHUN SAYANGNYA AKU</h1>
+<h1>IBRAHIM DIAZ AKBAR ❤️‍🔥</h1>
+<h2>DARI ACA KESAYANGANNYA ABAR ❤️‍🔥</h2>
+</section>
+
+<script>
+function go(id){
+ document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+}
+
+/* BALON */
+let pop=0;
+const colors=["#ff4d6d","#ff85a2","#ff1f4c"];
+const balloons=document.getElementById("balloons");
+for(let i=0;i<20;i++){
+ let b=document.createElement("div");
+ b.className="balloon";
+ b.style.background=colors[Math.floor(Math.random()*3)];
+ b.style.left=Math.random()*80+"%";
+ b.style.top=Math.random()*200+"px";
+ b.onclick=()=>{
+   b.remove();
+   pop++;
+   document.getElementById("balloonText").innerText=Balon pecah ${pop}/20;
+   if(pop===20){
+     document.getElementById("balloonText").innerText="Yeayyy berhasil 💖";
+     setTimeout(()=>{go('slides');showSlide(0)},700);
+   }
+ };
+ balloons.appendChild(b);
+}
+
+/* SLIDE */
+let idx=0;
+const slides=document.querySelectorAll(".slide");
+function showSlide(i){
+ slides.forEach(s=>s.style.display="none");
+ slides[i].style.display="block";
+}
+slides.forEach(s=>{
+ s.onclick=()=>{
+   idx++;
+   if(idx>=slides.length){go("question")}
+   else showSlide(idx);
+ }
+});
+
+/* PIN */
+function goPin(){
+ go("pin");
+ const pin="672025";
+ let input="";
+ const d=document.getElementById("pinDisplay");
+ const btn=document.getElementById("pinButtons");
+ btn.innerHTML="";
+ for(let i=0;i<10;i++){
+  let b=document.createElement("button");
+  b.innerText=i;
+  b.onclick=()=>{
+    input+=i;
+    d.innerText=input;
+    if(input.length===6){
+      if(input===pin) go("envelopeSec");
+      else{alert("Salah 😤");input="";d.innerText=""}
+    }
+  };
+  btn.appendChild(b);
+ }
+}
+
+/* AMPOLOP */
+document.getElementById("envelope").onclick=()=>{
+ document.getElementById("letter").style.display="block";
+}
+</script>
+
+</body>
+</html>
